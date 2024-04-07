@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+*{
+  font-family: "Reddit Mono", monospace;
+}
+
+.flex-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.flex-containers {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:any-link{
+  color: #A833B9;
+}
+
+a:visited{
+  color: #470252;
+}
+
+a:hover{
+  color: #db2bf7;
+}
+
+a:active{
+  color: #ab93af;
+}
+
+.button{
+  background-color: #BBDB9B;
+}
+
+.button:hover{
+  background-color: #7be611;
+}

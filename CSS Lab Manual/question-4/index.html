@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4 - External CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            font-size: 3rem;
+        }
+        .container{
+            margin: 50px;
+            display: flex;
+            flex-flow: column;
+        }
+        .container h1{
+            padding: 20px;
+            background-color: darkcyan;
+            color: whitesmoke;
+            font-size: 3rem;
+        }
+        .container .text{
+            background-color: dodgerblue;
+            display: inline-block;
+            padding: 20px 10px;
+            font-size: 1.5rem;
+        }
+        .container p{
+            color: wheat;
+        }
+        .container hr{
+            border-top: 5px dashed darkgoldenrod;
+            margin-bottom: 15px;
+        }
+        .container .text2{
+            font-size: 1.2rem;
+            background-color: rgb(0, 255, 170);
+            padding: 10px 0 0 10px;
+        }
+        .container a:any-link{
+            color: chocolate;
+            transition: .3s;
+            margin: 20px;
+            display: inline-block;
+        }
+        .container a:visited{
+            color: blueviolet;
+        }
+        .container a:hover{
+            color:cornflowerblue;
+            transform: scale(1.2);
+            transition: .3s;
+        }
+        .container a:active{
+            color: #7e7e7e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Website Title</h1>
+        <p class="text">This is a paragraph of text that explains the website.</p>
+        <br>
+        <hr>
+        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus libero autem quis, enim possimus error tempore, cumque quos ipsam temporibus illum veniam eveniet aliquam vel harum. Eligendi, nihil assumenda.<br><br>
+        <a href="https://www.google.co.in/" target="_blank">Google</a> <br>
+        <a href="https://www.youtube.com" target="_blank">Youtube</a></p>
+    </div>
+
+        <p>p-tag with lowest specificicity.</p>
+        <p style="font-size: 22px; color: violet; background-color: darkslategray; display: inline-block; padding: 10px;margin-top: 10px;">p-tag with inline-style (highest specificity)</p>
+</body>
+</html>
